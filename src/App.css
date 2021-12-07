@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #495257;
+}
+
+.App {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f5f7f8;
+  color: #495257;
+  height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #48ce65;
+}
+
+.logo span {
+  color: #495257;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 100vh;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+li {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.createBudget {
+  margin: 2rem;
+  background-color: white;
+  height: fit-content;
+  padding: 1.7rem;
+  border: 1px solid #4952572a;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.createBudget h2 {
+  font-size: 1.8rem;
+}
+.createBudget h3 {
+  margin-top: 10px;
+}
+
+.createBudget p {
+  width: 40rem;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.createBudget span {
+  color: #48ce65;
+}
+
+.expensesChart {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #4952572a;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: fit-content;
+  width: 43rem;
+  margin: 2rem;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.expensesPrice {
+  color: #e64b40;
+  font-weight: 600;
+}
+
+.view {
+  margin-left: 1rem;
+}
+
+.bills {
+  margin-left: 2rem;
+  border-bottom: 2px solid #495257;
+  border-radius: 1px;
+  width: fit-content;
+}
