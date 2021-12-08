@@ -18,7 +18,7 @@ const Dashboard = () => {
     const sum = filteredAmount.reduce((a, b) => {
         return a + b;
     }, 0);
-    
+
     useEffect(() => {
         setTotalBillsAmount(sum);
     }, [sum]);
@@ -26,7 +26,7 @@ const Dashboard = () => {
     return (
         <div className='dashboard'>
             <Nav setAddBillBtn={setAddBillBtn} totalBillsAmount={totalBillsAmount} />
-            {!addBillBtn ? <View totalBills={totalBills} /> : <AddBill totalBills={totalBills} setTotalBills={setTotalBills} setAddBillBtn={setAddBillBtn}/>}
+            {!addBillBtn ? <View totalBills={totalBills} setTotalBills={setTotalBills} /> : <AddBill totalBills={totalBills} setTotalBills={setTotalBills} setAddBillBtn={setAddBillBtn}/>}
         </div>
     )
 }

@@ -34,17 +34,17 @@ const AddBill = ({ totalBills, setTotalBills, setAddBillBtn }) => {
                 <div className='addBillFormWrapper'>
                     <FaBookmark />
                     <label htmlFor='billName'>Name</label>
-                    <input onChange={e => setName(e.target.value)} autoComplete='off' type='text' name='billName' />
+                    <input autoFocus={true} required onChange={e => setName(e.target.value)} autoComplete='off' type='text' name='billName' />
                 </div>
                 <div className='addBillFormWrapper'>
                     <FaMoneyCheckAlt />
                     <label htmlFor='billAmount'>Amount</label>
-                    <input onChange={e => setAmount(e.target.value)} autoComplete='off' type='number' name='billAmount' />
+                    <input required onChange={e => setAmount(e.target.value)} autoComplete='off' type='number' name='billAmount' />
                 </div>
                 <div className='addBillFormWrapper'>
                     <FaCalendarAlt />
                     <label htmlFor='billDate'>Due Date</label>
-                    <input onChange={e => setDate(e.target.value)} autoComplete='off' type='text' name='billDate' />
+                    <input required onChange={e => setDate(e.target.value)} autoComplete='off' type='text' name='billDate' />
                 </div>
                 <button type='submit' className='addBillFormBtn'>Add</button>
             </form>

@@ -100,6 +100,23 @@ li {
   font-weight: 500;
 }
 
+.expensesChartIconWrapper {
+  display: flex;
+}
+
+.expensesTitle {
+  margin-left: 1rem;
+}
+
+.expensesDeleteIcon {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.expensesEditIcon {
+  cursor: pointer;
+}
+
 .expensesPrice {
   color: #e64b40;
   font-weight: 600;
