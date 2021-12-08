@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from '../components/Nav';
 import View from '../components/View';
 import AddBill from '../components/AddBill';
@@ -10,7 +10,18 @@ const Dashboard = () => {
     const [totalBills, setTotalBills] = useState([]);
     const [totalBillsAmount, setTotalBillsAmount] = useState();
 
-    totalBills.map(billAmnt => setTotalBillsAmount(billAmnt.amount))
+    // Filter the price from each bill in the totalBills array
+    const filteredAmount = totalBills.map((bill) => {
+        return Number(bill.amount);
+    })
+    // Sum the all the amounts together
+    const sum = filteredAmount.reduce((a, b) => {
+        return a + b;
+    }, 0);
+    
+    useEffect(() => {
+        setTotalBillsAmount(sum);
+    }, [sum]);
 
     return (
         <div className='dashboard'>

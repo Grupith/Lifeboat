@@ -39,7 +39,7 @@ const AddBill = ({ totalBills, setTotalBills, setAddBillBtn }) => {
                 <div className='addBillFormWrapper'>
                     <FaMoneyCheckAlt />
                     <label htmlFor='billAmount'>Amount</label>
-                    <input onChange={e => setAmount(e.target.value)} autoComplete='off' type='text' name='billAmount' />
+                    <input onChange={e => setAmount(e.target.value)} autoComplete='off' type='number' name='billAmount' />
                 </div>
                 <div className='addBillFormWrapper'>
                     <FaCalendarAlt />
