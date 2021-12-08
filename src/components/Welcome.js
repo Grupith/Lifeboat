@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CreateBudget = () => {
+const Welcome = () => {
     return (
-        <div className='createBudget'>
+        <div className='welcome'>
             <h2>Welcome to <span>Lifeboat</span> Finance!</h2>
             <h3>Stay above water with your money!</h3>
             <p>Why the name Lifeboat? Because this should be the one place where you check your expenses, track income and add to savings!
@@ -11,4 +11,4 @@ const CreateBudget = () => {
     )
 }
 
-export default CreateBudget;
+export default Welcome;

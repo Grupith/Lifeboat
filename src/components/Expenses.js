@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Expenses = () => {
+const Expenses = ({ name, amount, date}) => {
     return (
         <div className='expensesChart'>
-            <p className='expensesTitle'>Amazon</p>
-            <span className='expensesPrice'>$10</span>
-            <p className='expensesDate'>22nd</p>
+            <p className='expensesTitle'>{name}</p>
+            <span className='expensesPrice'>${amount}</span>
+            <p className='expensesDate'>{date}</p>
         </div>
     )
 }

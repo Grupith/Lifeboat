@@ -2,7 +2,12 @@ import React from 'react';
 import { FaPlusSquare } from "react-icons/fa";
 
 
-const Nav = () => {
+const Nav = ({ setAddBillBtn, totalBillsAmount }) => {
+
+    const handleAddBillBtn = () => {
+        setAddBillBtn(prevClick => !prevClick);
+    }
+
     return (
         <nav className='nav'>
             <h1 className='logo'>Lifeboat <span>Finance</span></h1>
@@ -13,10 +18,10 @@ const Nav = () => {
             
             <div className='monthlyBudgetWrapper'>
                 <p className='monthlyBudgetText'>Total Bills</p>
-                <span className='monthlyBudgetAmount'>$356.63</span>
+                <span className='monthlyBudgetAmount'>${totalBillsAmount}</span>
             </div>
 
-            <div className='navButtonWrapper'>
+            <div className='navButtonWrapper' onClick={handleAddBillBtn}>
                 <FaPlusSquare />
                 <span className='navButtonText'>Add Bill</span>
             </div>

@@ -1,13 +1,13 @@
 import React from 'react';
-import CreateBudget from './CreateBudget';
+import Welcome from './Welcome';
 import Expenses from './Expenses';
 
-const View = () => {
+const View = ({ totalBills }) => {
     return (
         <div className='view'>
-            <CreateBudget />
-            <h2 className='bills'>Monthly Bills</h2>
-            <Expenses />
+            <Welcome />
+            {totalBills.length === 0 ? <div /> : <h2 className='bills'>Monthly Bills Left</h2>}
+            {totalBills.map(bill => <Expenses key={bill.name} name={bill.name} amount={bill.amount} date={bill.date} />)}
         </div>
     )
 }

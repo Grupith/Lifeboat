@@ -58,7 +58,7 @@ li {
   cursor: pointer;
 }
 
-.createBudget {
+.welcome {
   margin: 2rem;
   background-color: white;
   height: fit-content;
@@ -68,21 +68,21 @@ li {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.createBudget h2 {
+.welcome h2 {
   font-size: 1.8rem;
 }
-.createBudget h3 {
+.welcome h3 {
   margin-top: 10px;
 }
 
-.createBudget p {
+.welcome p {
   width: 40rem;
   margin-top: 10px;
   font-size: 1.1rem;
   line-height: 1.4;
 }
 
-.createBudget span {
+.welcome span {
   color: #48ce65;
 }
 
@@ -126,10 +126,12 @@ li {
   padding: 10px;
   border-radius: 10px;
   background-color: #48ce65;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
 }
 
 .navButtonWrapper:hover {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
 
 .navButtonText {
@@ -159,4 +161,80 @@ li {
   font-weight: 500;
   border-bottom: 1px solid #495257;
   padding: 3px;
+}
+
+.addBillContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem;
+}
+
+.addBillTitle {
+  margin: 1rem;
+  background-color: white;
+  height: fit-content;
+  padding: 1.7rem;
+  border: 1px solid #4952572a;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.addBillViewTitleSpan {
+  color: #00b2f6;
+}
+
+.addBillFormContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.addBillFormWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem;
+  background-color: white;
+  height: fit-content;
+  padding: 1.7rem;
+  border: 1px solid #4952572a;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 1.3rem;
+}
+
+.addBillFormBtn {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00b2f6;
+  user-select: none;
+  width: fit-content;
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.addBillFormBtn:hover {
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+}
+
+.addBillFormWrapper input {
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #49525771;
+  padding: 10px;
+  margin-left: 10px;
+  outline: none;
+}
+
+.addBillFormWrapper input:focus {
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+
+.addBillFormWrapper Label {
+  margin: 10px;
 }
