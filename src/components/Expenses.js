@@ -15,7 +15,7 @@ const Expenses = ({ id, name, amount, date, totalBills, setTotalBills}) => {
             <div className='expensesChartIconWrapper'>
                 <FaDumpster onClick={handleDelete} className='expensesDeleteIcon' />
                 <FaEdit className='expensesEditIcon'/>
-                <p className='expensesTitle'>{name}</p>
+                <p className='expensesTitle'>{name}</p> 
             </div>
             <span className='expensesPrice'>${amount}</span>
             <p className='expensesDate'>{date}</p>
